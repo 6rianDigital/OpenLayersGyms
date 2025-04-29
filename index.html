@@ -1,0 +1,58 @@
+<!-- 
+  Program: index.html
+  Programmer: Brian Gauthier
+  Purpose: Web map displaying the best gyms in Le Plateau Mont-Royal
+  Date: March 10, 2025
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Gyms</title>
+  <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+
+  <div id="mapDiv">
+
+    <div id="title">Best Gyms in Le Plateau Mont-Royal</div>
+    <div id="subtitle">(Montréal, QC)</div>
+
+    <div id="mouse-position">Longitude (X), Latitude (Y)</div>
+
+    <div id="layersOnOff" class="text">
+      <label for="GYM">Gyms:</label>
+      <input type="checkbox" id="GYM" checked>
+      <label for="ROAD">Roads:</label>
+      <input type="checkbox" id="ROAD" checked>
+      <label for="BOROUGH">Borough:</label>
+      <input type="checkbox" id="BOROUGH" checked>
+    </div>
+
+    <div id="mapToggle" class="text">
+      <label for="STREETMAP">Street Map</label>
+      <input type="radio" id="STREETMAP" name="maps" value="Street Map" checked>
+      <label for="GREYMAP">Grey Map</label>
+      <input type="radio" id="GREYMAP" name="maps" value="Grey Map">
+      <label for="TERRAINMAP">Terrain Map</label>
+      <input type="radio" id="TERRAINMAP" name="maps" value="Terrain Map">
+      <label for="WATERCOLOURMAP">Water Colour Map</label>
+      <input type="radio" id="WATERCOLOURMAP" name="maps" value="Water Colour Map">
+    </div>
+
+    <div id="copyright">&copy; Brian Gauthier, 2025</div>
+
+    
+    <div id="logo">
+      <img src="images/logo.jpg" alt="COGS Logo">
+    </div>
+
+  </div>
+
+</body>
+
+</html>
