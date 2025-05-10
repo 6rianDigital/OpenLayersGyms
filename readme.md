@@ -65,7 +65,7 @@ cd OpenLayersGyms
 npm install
 
 # Run the dev server
-npm run dev
+npm start
 
 📝 License
 
